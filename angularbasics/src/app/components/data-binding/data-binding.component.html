@@ -1,0 +1,40 @@
+<h1>Data Binding</h1>
+<div class="container">
+    <ol>
+        <li>One way data binding</li>
+        <ul>
+            <li>Interpolation</li>
+
+                    <p>My name is {{name}} and my age is {{age}}</p>
+                    <p>{{4+4}}</p>
+                    <p>My school name is {{schoolName}}</p>
+
+            <li>Event Binding</li>
+             
+                <button class="btn btn-primary" (click)="displayMessage()">Click</button>
+
+            <li>Property Binding</li>
+            <input type="text" [value]="name">
+            <img src="" [alt]="name">
+            <p [style]="'color:'+color">Hello</p>
+
+            <li>Style Binding</li>
+            <p [style.color]="color">Lorem, ipsum dolor.</p>
+            <p [style.text-align]="alignment">Lorem, ipsum dolor.</p>
+
+            <button class="btn btn-primary" (click)="changeAlignment('left')">Left</button>
+            <button class="btn btn-primary" (click)="changeAlignment('center')">Center</button>
+            <button class="btn btn-primary" (click)="changeAlignment('right')">Right</button>
+
+        </ul>
+        <li>Two way data binding</li>
+        <ul>
+            <li>ngModel</li>
+            <input type="text" [(ngModel)]="schoolName">
+            <p>My school name is {{schoolName}}</p>
+        </ul>
+    </ol>
+
+    <h1>{{schoolName}}</h1>
+
+</div>
