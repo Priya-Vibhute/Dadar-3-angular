@@ -6,6 +6,8 @@ import { DirectivesComponent } from './components/directives/directives.componen
 import { PipeComponent } from './components/pipe/pipe.component';
 import { IOComponent } from './components/io/io.component';
 import { LifecycleComponent } from './components/lifecycle/lifecycle.component';
+import { ServiceComponent } from './components/service/service.component';
+import { ObervablesComponent } from './components/obervables/obervables.component';
 
 export const routes: Routes = [
 
@@ -32,6 +34,14 @@ export const routes: Routes = [
     {
         path:"lifecycle-methods",
         component:LifecycleComponent
+    },
+    {
+        path:'services',
+        component:ServiceComponent
+    },
+    {
+        path:"observables",
+        component:ObervablesComponent
     }
 
 ];
